@@ -204,5 +204,7 @@ void appimage_clear(void) {
 				fmessage("AppImage detached\n");
 			close(lfd);
 		}
+		free(devloop);
+		devloop = NULL;
 	}
 }
